@@ -45,7 +45,7 @@ async function run() {
             res.send(result);
         })
         
-        // part-2
+        // part-2  post method for craft part
         app.post('/craft', async (req, res) => {
             const newArt = req.body;
             console.log(newArt);
