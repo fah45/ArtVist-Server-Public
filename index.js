@@ -61,6 +61,7 @@ async function run() {
             res.send(result);
         })
 
+        // part -4 for my craft
         app.get('/my-craft/:id', async (req, res) => {
             const result = await craftCollection.find({ email: req.params.id }).toArray();
             res.send(result);
