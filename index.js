@@ -38,7 +38,7 @@ async function run() {
         const craftCollection = client.db('craftDB').collection('craft')
         const userCollection = client.db('craftDB').collection('user');
 
-       // part-1
+       // part-1 for craft section part
         app.get('/craft', async (req, res) => {
             const cursor = craftCollection.find();
             const result = await cursor.toArray();
