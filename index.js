@@ -44,7 +44,8 @@ async function run() {
             const result = await cursor.toArray();
             res.send(result);
         })
-
+        
+        // part-2
         app.post('/craft', async (req, res) => {
             const newArt = req.body;
             console.log(newArt);
